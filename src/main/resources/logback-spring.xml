@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+	<property name="LOGS" value="${LOG_PATH}" />
+	<appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d %level [%t] %logger{16} %method:%line - %m%n</Pattern>
+		</layout>
+	</appender>
+	<appender name="RollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>Logs/smartkrow.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<!--<Pattern>%d %level %C{1.} %method [%t] %m%n</Pattern>-->
+			<Pattern>%d %level [%t] %logger{16} %method:%line - %m%n</Pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<!-- rollover daily and when the file reaches 10 MegaBytes -->
+			<fileNamePattern>Logs/archived/smartkrow-%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+			<maxFileSize>50MB</maxFileSize>
+			<maxHistory>60</maxHistory>
+			<totalSizeCap>5GB</totalSizeCap>
+		</rollingPolicy>
+	</appender>
+	<!-- LOG everything at INFO level -->
+	<root level="info">
+		<appender-ref ref="RollingFile" />
+		<appender-ref ref="Console" />
+	</root>
+	<!-- LOG "com.baeldung*" at TRACE level -->
+	<!--<logger name="com.poc.rvision.*" level="debug" additivity="false">-->
+	<!--<appender-ref ref="RollingFile"/>-->
+	<!--&lt;!&ndash;<appender-ref ref="Console" />&ndash;&gt;-->
+	<!--</logger>-->
+</configuration>

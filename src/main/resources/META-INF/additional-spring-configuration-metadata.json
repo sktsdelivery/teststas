@@ -1,0 +1,62 @@
+{"properties": [
+  {
+    "name": "amazon.aws.region",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon.aws.region'"
+  },
+  {
+    "name": "amazon.aws.credentials.access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon.aws.credentials.access-key'"
+  },
+  {
+    "name": "amazon.aws.credentials.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon.aws.credentials.secret-key'"
+  },
+  {
+    "name": "amazon.aws.s3.bucket-name",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon.aws.s3.bucket-name'"
+  },
+  {
+    "name": "amazon.aws.s3.expire-url-minutes",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon.aws.s3.expire-url-minutes'"
+  },
+  {
+    "name": "amazon.aws.endpoint",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon.aws.endpoint'"
+  },
+  {
+    "name": "amazon.aws.end-point",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon.aws.end-point'"
+  },
+  {
+    "name": "app.dir.fileupload.temp",
+    "type": "java.lang.String",
+    "description": "A description for 'app.dir.fileupload.temp'"
+  },
+  {
+    "name": "csvFilePath",
+    "type": "java.lang.String",
+    "description": "A description for 'csvFilePath'"
+  },
+  {
+    "name": "csvFilePath.fncaZipped",
+    "type": "java.lang.String",
+    "description": "A description for 'csvFilePath.fncaZipped'"
+  },
+  {
+    "name": "csvFilePath.fnca",
+    "type": "java.lang.String",
+    "description": "A description for 'csvFilePath.fnca'"
+  },
+  {
+    "name": "app.dir.fileupload.zipPath",
+    "type": "java.lang.String",
+    "description": "A description for 'app.dir.fileupload.zipPath'"
+  }
+]}
