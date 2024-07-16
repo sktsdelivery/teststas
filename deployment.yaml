@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-spring-boot-app
+  labels:
+    app: my-spring-boot-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-spring-boot-app
+  template:
+    metadata:
+      labels:
+        app: my-spring-boot-app
+    spec:
+      containers:
+      - name: my-spring-boot-container
+        image: my-spring-boot-image:latest  # Replace with your actual image name
+        env:
+          - name: MY_PROPERTY
+            valueFrom:
+              configMapKeyRef:
+                name: my-config  # Ensure this matches your ConfigMap name
+                key: my.property  # Ensure this matches your ConfigMap key
+        ports:
+          - containerPort: 8080  # Adjust to your application port

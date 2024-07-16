@@ -23,13 +23,13 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
+import com.archiveapi.controller.FileDownloadAndProcessController;
+import com.archiveapi.dto.BulkDownloadRequest;
+import com.archiveapi.dto.BulkDownloadResponse;
+import com.archiveapi.dto.PresignedUrlResponse;
+import com.archiveapi.service.BulkDownloadCSVFiles;
+import com.archiveapi.service.FileDownloadAndProcessService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.smartKrow.controller.FileDownloadAndProcessController;
-import com.smartKrow.dto.BulkDownloadRequest;
-import com.smartKrow.dto.BulkDownloadResponse;
-import com.smartKrow.dto.PresignedUrlResponse;
-import com.smartKrow.service.BulkDownloadCSVFiles;
-import com.smartKrow.service.FileDownloadAndProcessService;
 
 import jakarta.validation.ValidationException;
 

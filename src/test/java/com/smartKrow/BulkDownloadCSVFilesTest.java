@@ -26,10 +26,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.smartKrow.dto.BulkDownloadRequest;
-import com.smartKrow.exception.RestEntityException;
-import com.smartKrow.service.BulkDownloadCSVFiles;
-import com.smartKrow.service.FileDownloadAndProcessService;
+import com.archiveapi.dto.BulkDownloadRequest;
+import com.archiveapi.exception.RestEntityException;
+import com.archiveapi.service.BulkDownloadCSVFiles;
+import com.archiveapi.service.FileDownloadAndProcessService;
 
 @ExtendWith(MockitoExtension.class)
 @SpringBootTest

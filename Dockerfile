@@ -4,11 +4,10 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-COPY /data.csv /app/data.csv
 # Stage 2: Create the runtime image
 FROM openjdk:24-ea-jdk-oracle
 
 WORKDIR /app
-COPY --from=builder /app/target/document-0.0.1-SNAPSHOT.jar /app/smartKrow.jar
+COPY --from=builder /app/target/archiveapi-1.0.0.jar /app/archiveapi.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/smartKrow.jar"]
+ENTRYPOINT ["java", "-jar", "/app/archiveapi.jar"]

@@ -26,13 +26,13 @@ import org.springframework.data.domain.Page;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedScanList;
-import com.smartKrow.dto.Document;
-import com.smartKrow.dto.DocumentResponse;
-import com.smartKrow.dto.DocumentSearchRequest;
-import com.smartKrow.model.MasterSearchDataTable;
-import com.smartKrow.model.ZAPGFFUP;
-import com.smartKrow.model.ZAPPHC;
-import com.smartKrow.service.DocumentService;
+import com.archiveapi.dto.Document;
+import com.archiveapi.dto.DocumentResponse;
+import com.archiveapi.dto.DocumentSearchRequest;
+import com.archiveapi.model.MasterSearchDataTable;
+import com.archiveapi.model.ZAPGFFUP;
+import com.archiveapi.model.ZAPPHC;
+import com.archiveapi.service.DocumentService;
 
 import jakarta.validation.ValidationException;
 

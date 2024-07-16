@@ -3,6 +3,8 @@ package com.smartKrow;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.TestConfiguration;
 
+import com.archiveapi.Application;
+
 @TestConfiguration(proxyBeanMethods = false)
 public class TestApplication {
 

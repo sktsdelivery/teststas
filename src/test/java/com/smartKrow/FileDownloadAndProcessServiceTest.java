@@ -35,15 +35,15 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedScanList;
 import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
-import com.smartKrow.constants.ApplicationConstants;
-import com.smartKrow.dto.BulkDownloadRequest;
-import com.smartKrow.dto.BulkDownloadResponse;
-import com.smartKrow.dto.PresignedUrlResponse;
-import com.smartKrow.exception.RestEntityException;
-import com.smartKrow.model.BulkProgressDownloadStatus;
-import com.smartKrow.service.DynamoDBService;
-import com.smartKrow.service.FileDownloadAndProcessService;
-import com.smartKrow.service.S3Service;
+import com.archiveapi.constants.ApplicationConstants;
+import com.archiveapi.dto.BulkDownloadRequest;
+import com.archiveapi.dto.BulkDownloadResponse;
+import com.archiveapi.dto.PresignedUrlResponse;
+import com.archiveapi.exception.RestEntityException;
+import com.archiveapi.model.BulkProgressDownloadStatus;
+import com.archiveapi.service.DynamoDBService;
+import com.archiveapi.service.FileDownloadAndProcessService;
+import com.archiveapi.service.S3Service;
 
 import jakarta.validation.ValidationException;
 

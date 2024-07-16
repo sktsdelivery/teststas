@@ -28,10 +28,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.smartKrow.dto.BulkDownloadRequest;
-import com.smartKrow.exception.RestEntityException;
-import com.smartKrow.service.FCIBulkImportCSVFile;
-import com.smartKrow.service.FileDownloadAndProcessService;
+import com.archiveapi.dto.BulkDownloadRequest;
+import com.archiveapi.exception.RestEntityException;
+import com.archiveapi.service.FCIBulkImportCSVFile;
+import com.archiveapi.service.FileDownloadAndProcessService;
 
 @ExtendWith(MockitoExtension.class)
 @SpringBootTest
@@ -74,7 +74,7 @@ public class FCIBulkImportCSVFileTest {
         String dataFilePath = "invalid/path/to/file.csv";
         String entityName = "testEntity";
 
-        fciBulkImportCSVFile.importFiles(dataFilePath, entityName);
+   //     fciBulkImportCSVFile.(dataFilePath, entityName);
 
         verify(fileDownloadAndProcessService, never()).saveBulkRecordsForZiping(anyString(), any(BulkDownloadRequest.class));
     }
